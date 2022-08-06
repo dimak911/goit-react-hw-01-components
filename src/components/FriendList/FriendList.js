@@ -9,8 +9,6 @@ export const FriendList = ({ friends }) => (
     justifyContent="space-between"
     width="300px"
     backgroundColor="lightgrey"
-    mx="auto"
-    my="0"
     p={3}
     as="ul"
   >

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { Box } from 'components/Box';
-import { StatList } from './Statistics.styled';
+import { StatList, StatTitle } from './Statistics.styled';
 
-const getRandomHexColor = () => {
+export const getRandomHexColor = () => {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
@@ -16,12 +16,10 @@ export const Statistics = ({ title = null, stats }) => (
     justifyContent="center"
     width="300px"
     backgroundColor="lightgrey"
-    mx="auto"
-    my="0"
     p={3}
     as="section"
   >
-    {title && <h2>{title}</h2>}
+    {title && <StatTitle>{title}</StatTitle>}
 
     <StatList>
       {stats.map(({ id, label, percentage }) => (

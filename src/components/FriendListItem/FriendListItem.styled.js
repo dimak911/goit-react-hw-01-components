@@ -6,7 +6,7 @@ export const ListItem = styled.li`
   padding: ${p => p.theme.space[3]}px;
   gap: 20px;
   border: 1px solid black;
-  background-color: aqua;
+  background-color: #ff55ff;
 `;
 
 export const Status = styled.span`
