@@ -7,10 +7,9 @@ export const Description = styled.div`
 `;
 
 export const StatsList = styled.ul`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: ${p => p.theme.space[3]}px;
   background-color: ${p => p.theme.colors.background};
 `;
 

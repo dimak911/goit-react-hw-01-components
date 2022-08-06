@@ -17,7 +17,7 @@ export const Profile = ({
     my="0"
     p={3}
     width="300px"
-    as={'div'}
+    as="div"
   >
     <Description>
       <img src={avatar} alt="User avatar" width="200px" />
